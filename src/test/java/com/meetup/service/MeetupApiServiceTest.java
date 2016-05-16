@@ -1,14 +1,13 @@
 package com.meetup.service;
 
+import javax.inject.Inject;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.inject.Inject;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 /**
  * @author mh
@@ -16,7 +15,6 @@ import static org.junit.Assert.*;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@TestPropertySource(locations="classpath:test.properties")
 public class MeetupApiServiceTest {
 
     @Inject MeetupApiService service;

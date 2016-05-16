@@ -1,9 +1,9 @@
 package com.meetup.domain;
 
+import java.util.Set;
+
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;
-
-import java.util.Set;
 
 /**
  * @author mh
@@ -20,9 +20,9 @@ public class Group {
     Set<Event> events;
     Set<Member> members;
 
-    public Group(org.springframework.social.meetup.api.Group group) {
-        this.groupId = group.getId().longValue();
-        this.name = group.getName();
-        this.slug = group.getUrlname();
-    }
+//    public Group(org.springframework.social.meetup.api.Group group) {
+//        this.groupId = group.getId().longValue();
+//        this.name = group.getName();
+//        this.slug = group.getUrlname();
+//    }
 }
