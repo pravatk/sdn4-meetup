@@ -22,6 +22,8 @@ public class TopicRepositoryTest {
         Topic saved = repository.save(topic);
         Assert.assertNotNull(saved.id);
         Assert.assertEquals("Neo4j", saved.getName());
+        Topic found = repository.findOne(saved.id);
+        Assert.assertEquals("Neo4j", found.getName());
     }
 
 }

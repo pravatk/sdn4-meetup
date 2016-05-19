@@ -25,4 +25,11 @@ public class MeetupApiServiceTest {
         System.out.println("count = " + count);
         assertTrue(count > 10);
     }
+    @Test
+    public void testImportEvents() throws Exception {
+        service.importGroups("ES", "Barcelona");
+        int events = service.importEvents();
+        System.out.println("events = " + events);
+        assertTrue(events > 10);
+    }
 }

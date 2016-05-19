@@ -11,8 +11,8 @@ import org.neo4j.ogm.annotation.StartNode;
  */
 @RelationshipEntity(type="RATED")
 public class Rating {
-    @GraphId
-    Long id;
+
+    @GraphId Long id;
 
     @StartNode Member member;
     @EndNode Event event;
